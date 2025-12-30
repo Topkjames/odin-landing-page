@@ -1,0 +1,225 @@
+Here is your raw CSS for the Odin Project Landing Page, updated to be fluid and responsive without using any media queries.
+
+CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #ffffff;
+    --dark-color: #1f2937;
+    --light-gray: #e5e7eb;
+    --dark-gray: #6b7280;
+    --darker-gray: #141414;
+    --button-color: #3b82f6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    line-height: 1.5;
+}
+
+header, .hero {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 20px 0;
+}
+
+.landing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.landing-container a {
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
+.header-logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1 1 400px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    border: none;
+    padding: 8px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.image-placeholder {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    flex: 1 1 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.information {
+    padding: 60px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.random {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-random {
+    flex: 0 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.for-img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border: 4px solid var(--button-color);
+    border-radius: 15px;
+}
+
+.img-random p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+.quote-section {
+    background-color: var(--light-gray);
+    padding: 100px 0;
+}
+
+.inspire {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspire p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--dark-color);
+}
+
+.author-one {
+    align-self: flex-end;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.call-to-action {
+    padding: 80px 0;
+}
+
+.containing {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.call {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.containing p {
+    flex: 1 1 300px;
+}
+
+.inside {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    padding: 8px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 30px 0;
+    text-align: center;
+}
